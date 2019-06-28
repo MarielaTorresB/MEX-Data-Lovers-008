@@ -32,3 +32,5 @@ Por último también les consultamos sobre cuales características les serían �
 
 ![Filtrar](Images/Filtrar.png)
 ![Ordenar](Images/Ordenar.png)
+
+Con estos datos elaboramos un primer [prototipo](https://marvelapp.com/9327c7g/screen/58721616) en Marvel, del cual aún no tenemos retroalimentación.
