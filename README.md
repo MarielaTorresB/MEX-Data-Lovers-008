@@ -4,15 +4,13 @@ Este es el segundo reto de la 8a generación de Laboratoria. El reto consiste en
 
 ## Usuario
 
-Tomando en cuenta que lo único que sabemos de nuestros usuarios en principio es que juegan Pokémon GO. Decidimos elaborar y aplicar una encuesta para obtener más información tal como edad, sexo, ocupación y sus necesidades para más adelante poder tomar decisiones de diseño de la página web.
+Tomando en cuenta que lo único que sabemos de nuestros usuarios en principio es que juegan Pokémon GO. Decidimos elaborar y aplicar una [encuesta](https://forms.gle/w6sJvejhR46GrrDy7) para obtener más información tal como edad, sexo, ocupación y sus necesidades para más adelante poder tomar decisiones de diseño de la página web. La encuesta se aplicó en grupos de Facebook relacionados a Pokémon, así como a personas conocidas que juegan Pokémon GO.
 
 Hasta el momento hemos tenido 32 respuestas, que arrojan los siguientes datos sobre los usuarios.
 
-_La encuesta se aplicó en grupos de Facebook relacionados a Pokémon, así como a personas conocidas que juegan Pokémon GO ..._
-
 El principal rango de edad de usuarios tiene entre 25 y 30 años (34.4%), seguidos por el grupo de entre 30 y 35 años (21.9%) y el de 18 a 25 años (18.8%)
 
-![Edad de los encuestados] (Images/Edad.png)
+![Edad de los encuestados](Images/Edad.png)
 
 En el caso del género,los usuarios son de ambos sexos, aunque son principalmente hombres (65.6%).
 
