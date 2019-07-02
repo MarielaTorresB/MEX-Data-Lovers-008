@@ -10,27 +10,27 @@ Hasta el momento hemos tenido 32 respuestas, que arrojan los siguientes datos so
 
 El principal rango de edad de usuarios tiene entre 25 y 30 años (34.4%), seguidos por el grupo de entre 30 y 35 años (21.9%) y el de 18 a 25 años (18.8%)
 
-![Edad de los encuestados](Images/Edad.png)
+![Edad de los encuestados](images/Edad.png)
 
 En el caso del género,los usuarios son de ambos sexos, aunque son principalmente hombres (65.6%).
 
-![Género](Images/Género.png)
+![Género](images/Género.png)
 
 También encontramos que se trata principalmente de personas que trabajan.
 
-![Ocupación](Images/Ocupación.png)
+![Ocupación](images/Ocupación.png)
 
 Notamos que en gran parte se consideran a si mismos como personas muy familiarizadas con Pokémon
-![Familiaridad](Images/Fam.png)
+![Familiaridad](images/Fam.png)
 
 Les consultamos a los usuarios acerca de que características de los Pokémon consideran las más importantes y las menos importantes para poder elegir cuales mostraremos en la interfaz.
 
-![Características importantes](Images/Relevantes.png)
-![Características prescindibles](Images/Irrelevantes.png)
+![Características importantes](images/Relevantes.png)
+![Características prescindibles](images/Irrelevantes.png)
 
 Por último también les consultamos sobre cuales características les serían útiles como criterios para filtrar y ordenar Pokémon.
 
-![Filtrar](Images/Filtrar.png)
-![Ordenar](Images/Ordenar.png)
+![Filtrar](images/Filtrar.png)
+![Ordenar](images/Ordenar.png)
 
 Con estos datos elaboramos un primer [prototipo](https://marvelapp.com/9327c7g/screen/58721616) en Marvel, del cual aún no tenemos retroalimentación.
