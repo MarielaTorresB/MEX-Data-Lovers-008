@@ -1,0 +1,20 @@
+*{
+    background: linear-gradient(to bottom right, red , blue); /* Standard syntax */
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.all-Pokemon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-around;
+}
+
