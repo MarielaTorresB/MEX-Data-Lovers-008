@@ -1,5 +1,6 @@
 *{
-    background: linear-gradient(to bottom right, red , blue); /* Standard syntax */
+    background: black;
+    margin: 0;
 }
 
 .header{
@@ -11,10 +12,14 @@
 .all-Pokemon{
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 5rem;
+    justify-content: space-between;
+    align-content: space-around;
 }
 
 .datos{
     display: flex;
     justify-content: space-around;
 }
-
