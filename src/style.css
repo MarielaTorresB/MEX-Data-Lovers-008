@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 .header{
     display: flex;
     justify-content: center;
@@ -12,14 +13,28 @@
 .all-Pokemon{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    justify-content: center;
-    margin: 5rem;
-    justify-content: space-between;
+    width: 95%;
+    justify-content: space-around;
+    margin: 5vh;
     align-content: space-around;
+}
+
+.box-Pokemon{
+    width: 20%;
+    margin: 0.5rem;
 }
 
 .datos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.name{
+    margin:0,1rem;
+}
+
+.img{
+    display:flex;
+    justify-content: center;
 }

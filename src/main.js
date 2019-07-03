@@ -11,7 +11,7 @@ const mostrarData = () => {
             </div>
             <div class = "datos">
                 <div class = "number">
-                    <p class = "poke-Number" >${element.num}</p>
+                    <p class = "poke-Number" >${element.id}</p>
                 </div>
                 <div class = "name">
                     <p class = "poke-Name" >${element.name}</p>
@@ -23,3 +23,4 @@ const mostrarData = () => {
  allPokemon.innerHTML = pokeCard;
 };
 mostrarData();
+
