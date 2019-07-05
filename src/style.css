@@ -1,20 +1,94 @@
 *{
-    background: linear-gradient(to bottom right, red , blue); /* Standard syntax */
+    margin: 0%;
 }
 
+body{
+    padding: 0%;
+}
 .header{
     display: flex;
     justify-content: center;
-    background: white;
+    align-items: center;
+    background:white;
+    margin: 0%;
+    width: 100vw;
+    height: 25vh;
+}
+
+.titulo{
+    display: flex;
+    width: 50%;
+    height: 70%;
+}
+
+.options{
+    width: 100%wv;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:black;
+}
+
+.option-one{
+    width: 30%;    
+    display: flex;
+}
+
+.option-two{
+    width: 20%;    
+    display: flex;
+}
+
+.option-three{
+    width: 20%;
+    display: flex;
 }
 
 .all-Pokemon{
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    background: red;
+}
+
+.box-Pokemon{
+    width: 20%;
+    justify-content: space-between;
+    background: rgba(247, 247, 111);
+    border: 20px solid #d5fa02; 
+    align-items: center;
+   |padding: 1%;
+    margin: 20px;
+    filter: drop-shadow(5px, 5px, 10px, #444);
 }
 
 .datos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;   
+    margin: auto;
+    align-items: center;
+    border-radius: 15px;
+   }
+
+.img-P{
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding: 10%;
+
 }
 
+.number{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+}
+
+.name{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;   
+}
