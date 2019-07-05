@@ -6,7 +6,7 @@ const mostrarData = () => {
         pokeCard += 
 
         `<div class = "box-Pokemon">
-            <div class = "img">
+            <div class = "img-P">
                 <img class = "poke-img" src = "${element.img}"/>
             </div>
             <div class = "datos">
@@ -22,4 +22,10 @@ const mostrarData = () => {
     });
  allPokemon.innerHTML = pokeCard;
 };
+
 mostrarData();
+
+/*let numPokemon = POKEMON.pokemon.type.filter(function(element){
+    return element.lenght < 4;
+});
+console.log(numPokemon);*/
