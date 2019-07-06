@@ -1,14 +1,43 @@
 *{
-    background:white;
     margin: 0;
 }
-
+body{
+    background:white;
+}
+.titulo{
+    background: red;
+}
 
 .header{
     display: flex;
     justify-content: center;
-    background: white;
+    background: red;
 }
+
+.options{
+    width: 100%wv;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:black;
+}
+
+.option-one{
+    width: 30%;    
+    display: flex;
+}
+
+.option-two{
+    width: 20%;    
+    display: flex;
+}
+
+.option-three{
+    width: 20%;
+    display: flex;
+}
+
 
 .all-Pokemon{
     display: flex;
@@ -17,6 +46,7 @@
     justify-content: space-around;
     margin: 5vh;
     align-content: space-around;
+    background: white;
 }
 
 .box-Pokemon{
@@ -66,4 +96,5 @@
 .img{
     display:flex;
     justify-content: center;
+    background: white;
 }
