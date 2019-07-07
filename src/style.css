@@ -98,3 +98,9 @@ body{
     justify-content: center;
     background: white;
 }
+
+.manipulation{
+    display:flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
