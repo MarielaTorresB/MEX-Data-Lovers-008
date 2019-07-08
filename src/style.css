@@ -1,24 +1,17 @@
 *{
-    margin: 0%;
+    margin: 0;
+}
+body{
+    background:white;
+}
+.titulo{
+    background: red;
 }
 
-body{
-    padding: 0%;
-}
 .header{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background:white;
-    margin: 0%;
-    width: 100vw;
-    height: 25vh;
-}
-
-.titulo{
-    display: flex;
-    width: 50%;
-    height: 70%;
+    background: red;
 }
 
 .options{
@@ -45,50 +38,69 @@ body{
     display: flex;
 }
 
+
 .all-Pokemon{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    background: red;
+    width: 95%;
+    justify-content: space-around;
+    margin: 5vh;
+    align-content: space-around;
+    background: white;
 }
 
 .box-Pokemon{
-    width: 20%;
-    justify-content: space-between;
-    background: rgba(247, 247, 111);
-    border: 20px solid #d5fa02; 
-    align-items: center;
-   |padding: 1%;
-    margin: 20px;
-    filter: drop-shadow(5px, 5px, 10px, #444);
+    display:flex;
+    align-items: space-around;
+    background-color:whitesmoke;
+    width: 17rem;
+    height:14rem;
+    perspective: 1000px;
+    margin-bottom: 2rem;
 }
 
-.datos{
-    display: flex;
-    justify-content: space-around;   
-    margin: auto;
-    align-items: center;
-    border-radius: 15px;
-   }
-
-.img-P{
-    align-self: flex-start;
-    justify-self: flex-start;
-    padding: 10%;
-
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.number{
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Rajdhani', sans-serif;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 3em;
+.box-Pokemon:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
-.name{
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Rajdhani', sans-serif;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 3em;   
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color:white;
+    color: black;
+    justify-content: space-around;
+}
+
+.flip-card-back {
+    background-color: white;
+    color:black;
+    transform: rotateY(180deg);
+  }
+
+
+.img{
+    display:flex;
+    justify-content: center;
+    background: white;
+}
+
+.manipulation{
+    display:flex;
+    justify-content: space-around;
+    align-content: space-around;
 }
