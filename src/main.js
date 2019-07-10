@@ -3,10 +3,12 @@ let type = document.getElementById("type"); //Esta es la lista deplegable con lo
 let order = document.getElementById("order"); // Lista despeglable para ordenar los pokemones
 const dataPokemon = POKEMON.pokemon; //Data
 let pokearray = [];
- 
-const mostrarData = (dataPokemon) => {
+let pokearrayOrganized = [];
+let filtered = [];
+
+const mostrarData = (data) => {
     let str =  '';
-    dataPokemon.forEach(element => {
+    data.forEach(element => {
         str += 
            `<div class="box-Pokemon">
                <div class= "flip-card-inner">
@@ -48,9 +50,16 @@ mostrarData(dataPokemon);
 showType = event => {
 const condition = event.target.value; //Guardando el tipo de Pokémon que elige el usuario
 pokearray = window.filterData(dataPokemon,condition); //Se guarda como nuevo arreglo, el resultado de la función filterData
-console.log(pokearray);
 mostrarData(pokearray);
 };
 
-type.addEventListener("change", showType); //La lista desplegable responderá a un cambio y ejecuta la función "showtype"
+//Funcion "orderPokemon"
+orderPokemon = event => {
+    const criterion = event.target.value; //Guardando el orden que elige el usuario
+    pokearrayOrganized = window.sortData(pokearray,criterion); //Se guarda como nuevo arreglo, el resultado de la función filterData
+    mostrarData(pokearrayOrganized);
+};
 
+ type.addEventListener("change", showType); //La lista desplegable responderá a un cambio y ejecuta la función "showtype"
+ order.addEventListener("change",orderPokemon);
+ 
