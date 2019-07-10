@@ -11,8 +11,8 @@ let  filterData = (data, condition) => {
 let filtered = data.filter(element =>  element.type.indexOf(condition) > -1);
 return filtered;
 };
-
 window.filterData= filterData;
+
 
 
 
