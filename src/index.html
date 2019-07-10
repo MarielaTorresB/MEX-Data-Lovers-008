@@ -2,56 +2,110 @@
 <html lang="esp">
 
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Pokemon Start</title>
     <link rel="icon" type="image/jpeg" href="../images/icon.jpg"/>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Rajdhani|Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Poiret+One|Rum+Raisin&display=swap" rel="stylesheet"> 
 
   </head>
   <body>
 
-    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="./data/pokemon/pokemon.js"></script>   
 
     <header class = "header">
       <figure class ="titulo">
         <a>
-          <img src="../images/pokegiftransparente.gif">
+          <img class="img-header" src="../images/pokegiftransparente.gif">
         </a>
-      </figure>
+       </figure>
     </header>
     
     <nav class = "options">
       <div class="option-one">
         <figure class = "home">
           <a>
-            <img src="../images/iconoInicio" width="40%">
+            <img src="../images/iconoInicio">
           </a>
         </figure>
+    
+        <div class = "color-one">          
+        </div>
       </div>
 
       <div class = "option-two">
         <figure class="show-pokemon">
           <a>
-            <img src="../images/imagesOne.png" width="60%">
+           <img class = "pokemon-show" src="../images/pikachu.png">
           </a>
         </figure>
+
+        <div class = "color-two">
+        </div>
       </div>
 
       <div class = "option-three">
         <figure class = "stadistics">
           <a>
-            <img src = "../images/iconColor.png"  width = 60%>
+            <img class = "graph-img" src = "../images/graph.png">
           </a>
         </figure>
+        <div class = "color-three">
+        </div>
+      </div>
+
+      <div class = "option-four">
+        <figure class = "knowledge">
+          <a>
+            <img class = "know-img" src = "../images/iconColor.png">
+          </a>
+        </figure>
+    
+        <div class = "color-four">        
+        </div>
       </div>
     </nav>
+<!-- 
+    <section id= "section-one" class ="introduction-video">        
+      <div>
+      <article class = "information">
+        <div class = "video-responsive">
+           <iframe src="https://www.youtube.com/embed/Kwpp4mCCSa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+           </iframe>    
+         </div>    
+        </div>
+        <div class = "information-text">
+          <h1>¿Sabías qué...?</h1>
+          <div class = "pharagraph">
+            <p class = "pharagraph-inf">
+              Ash es un niño del pueblo Paleta, tiene 10 años y por fin podrá sacar su licencia Pokemón.
+              A los 10 años se puede obtener un pokemón principiante del profesor Oak, el experto en pokemones
+              de la ciudad. Ash viajará para obtener la sabiduría del entrenamiento pokemón. 
+              Y tú, ¿estás listo para ser ¡<b>El MEJOR MAESTRO POKEMON</b>! del mundo?
+            </p>
+         </div>
+        </div>
+      </article>
+
+
+
+
+      <div class = "right-side">
+      </div>
+    </div>
+
+
+  </section> -->
+
 
     <div class="manipulation">
       <div class="filtrar">
         <p>Filtra por tipo de Pokémon</p>
-        <select name="tipo" id="type">
+        <select name="tipo" id="type" class="filter-type">
+          <option value="nothing">   </option>
           <option value="Water">Water</option>
           <option value="Fire">Fire</option>
           <option value="Grass">Grass</option>
@@ -70,11 +124,12 @@
       </div>
       <div class="ordenar">
         <p>Ordenar</p>
-        <select name="ordenando" id="type">
-            <option>Alfabético (A a Z) </option>
-            <option>Alfabético (Z a A) </option>
-            <option>Número (Ascendente) </option>
-            <option>Número (Descendente)</option>
+        <select name="ordenando" id="order" class = "order-pokemon">
+            <option value="nothing">   </option>
+            <option value="A-to-Z"> Alfabético (A a Z) </option>
+            <option value="Z-to-A"> Alfabético (Z a A) </option>
+            <option value="0-to-9"> Número (Ascendente) </option>
+            <option value="9-to-0">Número (Descendente)</option>
         </select>
       </div>
     </div>

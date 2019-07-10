@@ -3663,7 +3663,7 @@ var POKEMON = {
     "id": 135,
     "num": "135",
     "name": "Jolteon",
-    "i  mg": "http://www.serebii.net/pokemongo/pokemon/135.png",
+    "img": "http://www.serebii.net/pokemongo/pokemon/135.png",
     "type": [
       "Electric"
     ],
