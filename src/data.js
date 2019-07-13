@@ -1,33 +1,33 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-// const example = () => {
-//   return 'example';
-// };
-
-//window.example = example;
-
 let  filterData = (data, condition) => {
-let filtered = data.filter(element =>  element.type.indexOf(condition) > -1);
-return filtered;
-};
-window.filterData= filterData;
+   let filtered;
+ if (condition == "allP") {
+   filtered = data;
+ } else {
+   filtered = data.filter(element =>  element.type.indexOf(condition) > -1);
+ }
+ return filtered;
+ };
+ window.filterData= filterData;
 
-let sortData = (pokearray, criterion) => {
-
-    if (criterion === "A-to-Z"){
-       organized= pokearray.sort((a,b) => a.name.localeCompare(b.name));
+let sortData = (data, sortOrder) => {   
+   let organized;
+    if (sortOrder === "A-to-Z"){
+       organized= data.sort((a,b) => a.name.localeCompare(b.name));
     }
-    if (criterion === "Z-to-A"){
-       organized= pokearray.sort((a,b) => b.name.localeCompare(a.name));
+    if (sortOrder === "Z-to-A"){
+       organized= data.sort((a,b) => b.name.localeCompare(a.name));
     }
-    if (criterion === "0-to-9"){
-       organized=pokearray.sort((a,b)=>{return(a.id-b.id)});
+    if (sortOrder === "0-to-9"){
+       organized = data.sort((a,b) => {
+          return(a.id - b.id);
+         });
     }
-    if (criterion ==="9-to-0"){
-       organized=pokearray.sort((a,b)=>{return(b.id-a.id)});
+    if (sortOrder ==="9-to-0"){
+       organized = data.sort((a,b) => {
+          return(b.id - a.id);
+         });
     }
-    return organized
+    return organized;
 };
     
 window.sortData= sortData;

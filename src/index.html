@@ -9,10 +9,11 @@
     <link rel="icon" type="image/jpeg" href="../images/icon.jpg"/>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Rajdhani|Shadows+Into+Light&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Poiret+One|Rum+Raisin&display=swap" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Poiret+One|Rum+Raisin&display=swap" rel="stylesheet">     
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
-  <body>
+
+  <body>    
 
     <script src="./data/pokemon/pokemon.js"></script>   
 
@@ -26,49 +27,24 @@
     
     <nav class = "options">
       <div class="option-one">
-        <figure class = "home">
-          <a>
-            <img src="../images/iconoInicio">
-          </a>
-        </figure>
-    
+        <input type = "image" id ="home-page" src = "../images/iconoInicio" width= "80%">  
         <div class = "color-one">          
         </div>
       </div>
 
       <div class = "option-two">
-        <figure class="show-pokemon">
-          <a>
-           <img class = "pokemon-show" src="../images/pikachu.png">
-          </a>
-        </figure>
-
+        <input type = "image" id = "pokedex" src = "../images/pikachu.png" width = "50%">
         <div class = "color-two">
-        </div>
+        </div> 
       </div>
 
       <div class = "option-three">
-        <figure class = "stadistics">
-          <a>
-            <img class = "graph-img" src = "../images/graph.png">
-          </a>
-        </figure>
-        <div class = "color-three">
-        </div>
-      </div>
-
-      <div class = "option-four">
-        <figure class = "knowledge">
-          <a>
-            <img class = "know-img" src = "../images/iconColor.png">
-          </a>
-        </figure>
-    
-        <div class = "color-four">        
+        <input type = "image" id = "graph" src = "../images/graph.png">
+        <div class = "color-three"> 
         </div>
       </div>
     </nav>
-<!-- 
+
     <section id= "section-one" class ="introduction-video">        
       <div>
       <article class = "information">
@@ -76,8 +52,7 @@
            <iframe src="https://www.youtube.com/embed/Kwpp4mCCSa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
            </iframe>    
          </div>    
-        </div>
-        <div class = "information-text">
+         <div class = "information-text">
           <h1>¿Sabías qué...?</h1>
           <div class = "pharagraph">
             <p class = "pharagraph-inf">
@@ -86,26 +61,18 @@
               de la ciudad. Ash viajará para obtener la sabiduría del entrenamiento pokemón. 
               Y tú, ¿estás listo para ser ¡<b>El MEJOR MAESTRO POKEMON</b>! del mundo?
             </p>
-         </div>
+          </div>
         </div>
       </article>
-
-
-
-
-      <div class = "right-side">
-      </div>
     </div>
+  </section> 
 
-
-  </section> -->
-
-
+  <section id = "section-pokemon" class = "hidden">
     <div class="manipulation">
       <div class="filtrar">
         <p>Filtra por tipo de Pokémon</p>
         <select name="tipo" id="type" class="filter-type">
-          <option value="nothing">   </option>
+          <option value="allP" selected= "True">Todos</option>
           <option value="Water">Water</option>
           <option value="Fire">Fire</option>
           <option value="Grass">Grass</option>
@@ -124,8 +91,8 @@
       </div>
       <div class="ordenar">
         <p>Ordenar</p>
-        <select name="ordenando" id="order" class = "order-pokemon">
-            <option value="nothing">   </option>
+        <select name= "ordenando" id="order" class = "order-pokemon">
+            <option value="nothing" selected = "True" disabled = "disabled">   </option>
             <option value="A-to-Z"> Alfabético (A a Z) </option>
             <option value="Z-to-A"> Alfabético (Z a A) </option>
             <option value="0-to-9"> Número (Ascendente) </option>
@@ -133,13 +100,17 @@
         </select>
       </div>
     </div>
-   <section class = "all-Pokemon" id="all-Pokemon">
+   <div class = "all-Pokemon" id="all-Pokemon">
+   </div>    
+  </section>
 
-   </section>
-    
-  
+  <section id="show-graph" class = "hidden">
+      <div id="div-show-graph">
+      </div>
+  </section>
     
     <script src="data.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js"></script> 
+
   </body>
 </html>
