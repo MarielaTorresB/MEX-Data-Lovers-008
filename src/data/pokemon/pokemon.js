@@ -4085,3 +4085,5 @@ var POKEMON = {
   }]
 }
 ;;
+
+window.POKEMON = POKEMON;
