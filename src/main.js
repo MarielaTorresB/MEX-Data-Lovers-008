@@ -45,11 +45,7 @@ const mostrarData = (data) => {
                         </div>
                    </div>
                </div>
-<<<<<<< HEAD
-           </div>`  ;                      
-=======
            </div>` ;                  
->>>>>>> upstream/master
     });
 allPokemon.innerHTML = str;
 };
@@ -67,13 +63,8 @@ const orderPokemon = event => {
     if (pokearray.length == "0"){
         pokearray= dataPokemon;
     }
-<<<<<<< HEAD
     const criterion = event.target.value; //Guardando el orden que elige el usuario
     pokearrayOrganized = window.sortData(pokearray,criterion); //Se guarda como nuevo arreglo, el resultado de la función filterData
-=======
-    const ordenDatos = event.target.value; //Guardando el orden que elige el usuario
-    pokearrayOrganized = window.sortData(pokearray,ordenDatos); //Se guarda como nuevo arreglo, el resultado de la función filterData
->>>>>>> upstream/master
     mostrarData(pokearrayOrganized);
 };
 
@@ -82,22 +73,14 @@ const orderPokemon = event => {
 const typeP = ["Water", "Fire", "Grass", "Ground", "Ice", "Electric", "Rock", "Flying", "Poison", "Bug", "Psychic", "Normal", "Fighting", "Dragon"];
 let numType = [];
 typeP.forEach(element =>{
-<<<<<<< HEAD
-   numType.push((window.filterData(dataPokemon,element).length));
-=======
     numType.push((window.filterData(dataPokemon,element).length));
->>>>>>> upstream/master
 })
 console.log(numType);
 
 let porcentageTypePokemon = [];
 
 numType.forEach(element => {
-<<<<<<< HEAD
-   porcentageTypePokemon.push(Math.round((element/dataPokemon.length)*100) + '%')
-=======
     porcentageTypePokemon.push(Math.round((element/dataPokemon.length)*100) + '%')
->>>>>>> upstream/master
 })
 console.log(porcentageTypePokemon)
 
@@ -106,33 +89,6 @@ google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(graphType);
 
 function graphType (){
-<<<<<<< HEAD
-   let data = google.visualization.arrayToDataTable([
-       ['Tipo', '%'],
-       ['Agua', 21],
-       ['Fuego', 8],
-       ['Planta', 9],
-       ['Tierra', 9],
-       ['Hielo', 3],
-       ['Eléctrico', 6],
-       ['Roca', 7],
-       ['Volador', 13],
-       ['Venenoso', 22],
-       ['Insecto', 8],
-       ['Psíquico', 9],
-       ['Normal', 16],
-       ['Volador', 5],
-       ['Dragón', 2]
-   ]);
-
-   const options ={
-       title: 'Tipos de Pokemones',
-       is3D: true,
-   };
-
-   let chart = new google.visualization.PieChart(document.getElementById('div-show-graph'));
-   chart.draw(data,options);
-=======
     let data = google.visualization.arrayToDataTable([
         ['Tipo', '%'],
         ['Agua', 21],
@@ -158,28 +114,12 @@ function graphType (){
 
     let chart = new google.visualization.PieChart(document.getElementById('div-show-graph'));
     chart.draw(data,options);
->>>>>>> upstream/master
 }
 
 const show = () =>{
     pokemones.classList.remove("hidden");
     inicio.classList.add("hidden");
     sectionGraph.classList.add("hidden");
-<<<<<<< HEAD
- };
- 
- const showHome = () =>{
-    inicio.classList.remove("hidden");
-    pokemones.classList.add("hidden");
-    sectionGraph.classList.add("hidden");
- };
- 
- const showGraph = () =>{
-    sectionGraph.classList.remove("hidden");
-    pokemones.classList.add("hidden");
-    inicio.classList.add("hidden");
- }
-=======
 };
 
 const showHome = () =>{
@@ -193,13 +133,11 @@ const showGraph = () =>{
     pokemones.classList.add("hidden");
     inicio.classList.add("hidden");
 }
->>>>>>> upstream/master
 
 type.addEventListener("change", showType); //La lista desplegable responderá a un cambio y ejecuta la función "showtype"
 order.addEventListener("change",orderPokemon);
 pokedex.addEventListener("click",show);
 introduction.addEventListener("click", showHome);
-<<<<<<< HEAD
 pokeGraph.addEventListener("click", showGraph);
  
 //  let prevolution=document.getElementById("prevolution"); //Borrar si no es posible mostrar evoluciones
@@ -214,6 +152,3 @@ pokeGraph.addEventListener("click", showGraph);
 // } else {
 //     evolution.innerHTML= [element].prev_evolution[0].name:
 //  };
-=======
-pokeGraph.addEventListener("click", showGraph);
->>>>>>> upstream/master
