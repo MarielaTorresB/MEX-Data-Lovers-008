@@ -79,39 +79,6 @@ let porcentageTypePokemon = [];
      porcentageTypePokemon.push(window.stadistics(element, dataPokemon));
  });
 
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(graphType);
-
-function graphType (){
-    let data = google.visualization.arrayToDataTable([
-        ['Tipo', '%'],
-        ['Agua', 32],
-        ['Fuego', 12],
-        ['Planta', 14],
-        ['Tierra', 14],
-        ['Hielo', 5],
-        ['Eléctrico', 9],
-        ['Roca', 11],
-        ['Volador', 19],
-        ['Venenoso', 33],
-        ['Insecto', 12],
-        ['Psíquico', 14],
-        ['Normal', 24],
-        ['Volador', 8],
-        ['Dragón', 3]        
-    ]);
-
-    const options ={
-        title: 'Tipos de Pokemones',
-        is3D: true,
-        'width':1000,
-        'height':1000,
-    };
-    
-    let chart = new google.visualization.PieChart(document.getElementById('div-show-graph'));
-    chart.draw(data,options);
-
-}
 
 const show = () =>{
     pokemones.classList.remove("hidden");
@@ -129,6 +96,39 @@ const showGraph = () =>{
     sectionGraph.classList.remove("hidden");
     pokemones.classList.add("hidden");
     inicio.classList.add("hidden");
+
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(graphType);
+    
+    function graphType (){
+        let data = google.visualization.arrayToDataTable([
+            ['Tipo', '%'],
+            ['Agua', 32],
+            ['Fuego', 12],
+            ['Planta', 14],
+            ['Tierra', 14],
+            ['Hielo', 5],
+            ['Eléctrico', 9],
+            ['Roca', 11],
+            ['Volador', 19],
+            ['Venenoso', 33],
+            ['Insecto', 12],
+            ['Psíquico', 14],
+            ['Normal', 24],
+            ['Volador', 8],
+            ['Dragón', 3]        
+        ]);
+    
+        const options ={
+            title: 'Tipos de Pokemones',
+            is3D: true,
+            'width':1000,
+            'height':1000,
+        };
+        
+        let chart = new google.visualization.PieChart(document.getElementById('div-show-graph'));
+        chart.draw(data,options);    
+    }
 };
 
 type.addEventListener("change", showType); //La lista desplegable responderá a un cambio y ejecuta la función "showtype"
