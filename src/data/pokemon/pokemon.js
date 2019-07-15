@@ -4086,8 +4086,4 @@ var POKEMON = {
 }
 ;;
 
-<<<<<<< HEAD
-window.POKEMON= POKEMON
-=======
 window.POKEMON = POKEMON;
->>>>>>> upstream/master
