@@ -207,7 +207,7 @@ h1{
     align-content: space-around;
     padding: 3%;
 }
-.filtrar-pokemon{
+.filtrar-pokemon, .orden-pokemon{
     font-size: 2vw;
     font-family: 'Orbitron', sans-serif;
 }
