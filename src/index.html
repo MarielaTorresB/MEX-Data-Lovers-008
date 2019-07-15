@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Pokemon Start</title>
+
     <link rel="icon" type="image/jpeg" href="../images/icon.jpg"/>
     <link rel="stylesheet" href="style.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Rajdhani|Shadows+Into+Light&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Poiret+One|Rum+Raisin&display=swap" rel="stylesheet">     
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica|Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   </head>
 
   <body>    
@@ -19,58 +23,63 @@
 
     <header class = "header">
       <figure class ="titulo">
-        <a>
-          <img class="img-header" src="../images/pokegiftransparente.gif">
-        </a>
+         <img class="img-header" src="../images/pokegiftransparente.gif">
        </figure>
     </header>
     
     <nav class = "options">
+    <div class = "options-container">
+
       <div class="option-one">
-        <input type = "image" id ="home-page" src = "../images/iconoInicio" width= "80%">  
+        <div class = "image-home">
+            <input type = "image" id ="home-page" src = "../images/iconoInicio">  
+        </div>         
         <div class = "color-one">          
         </div>
       </div>
 
       <div class = "option-two">
-        <input type = "image" id = "pokedex" src = "../images/pikachu.png" width = "50%">
+         <div class = "option-pokedex">
+            <input type = "image" id = "pokedex" src = "../images/pikachu.png">
+        </div>        
         <div class = "color-two">
         </div> 
       </div>
 
       <div class = "option-three">
-        <input type = "image" id = "graph" src = "../images/graph.png">
+        <div class = "option-graph">
+            <input type = "image" id = "graph" src = "../images/graph.png">
+        </div>        
         <div class = "color-three"> 
         </div>
       </div>
+    </div>
     </nav>
 
-    <section id= "section-one" class ="introduction-video">        
-      <div>
-      <article class = "information">
-        <div class = "video-responsive">
-           <iframe src="https://www.youtube.com/embed/Kwpp4mCCSa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-           </iframe>    
-         </div>    
-         <div class = "information-text">
-          <h1>¿Sabías qué...?</h1>
+  <section id= "section-one" class ="introduction-video">        
+    <div class = "page-home">
+       <div class = "video-responsive">
+         <iframe  class = "video" src="https://www.youtube.com/embed/Kwpp4mCCSa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+         </iframe>    
+       </div>    
+       <div class = "information-text">
+         <h1>¿Sabías qué...?</h1>
           <div class = "pharagraph">
-            <p class = "pharagraph-inf">
+           <p class = "pharagraph-inf">
               Ash es un niño del pueblo Paleta, tiene 10 años y por fin podrá sacar su licencia Pokemón.
               A los 10 años se puede obtener un pokemón principiante del profesor Oak, el experto en pokemones
               de la ciudad. Ash viajará para obtener la sabiduría del entrenamiento pokemón. 
               Y tú, ¿estás listo para ser ¡<b>El MEJOR MAESTRO POKEMON</b>! del mundo?
-            </p>
+           </p> 
           </div>
-        </div>
-      </article>
-    </div>
+        </div> <b></b>
+     </div>
   </section> 
 
   <section id = "section-pokemon" class = "hidden">
     <div class="manipulation">
       <div class="filtrar">
-        <p>Filtra por tipo de Pokémon</p>
+        <p class = "filtrar-pokemon">TIPO DE POKEMON:</p>
         <select name="tipo" id="type" class="filter-type">
           <option value="allP" selected= "True">Todos</option>
           <option value="Water">Water</option>
@@ -90,9 +99,8 @@
         </select>
       </div>
       <div class="ordenar">
-        <p>Ordenar</p>
         <select name= "ordenando" id="order" class = "order-pokemon">
-            <option value="nothing" selected = "True" disabled = "disabled">   </option>
+            <option value="nothing" selected = "True" disabled = "disabled">Ordenar por ...</option>
             <option value="A-to-Z"> Alfabético (A a Z) </option>
             <option value="Z-to-A"> Alfabético (Z a A) </option>
             <option value="0-to-9"> Número (Ascendente) </option>
@@ -105,10 +113,13 @@
   </section>
 
   <section id="show-graph" class = "hidden">
-      <div id="div-show-graph">
+      <div class = "box-porcentage" id = "estadistics">
+      </div>
+      <div class = "box-graph" id = "div-show-graph">
       </div>
   </section>
-    
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
     <script src="data.js"></script>
     <script src="main.js"></script> 
 

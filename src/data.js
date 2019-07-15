@@ -29,5 +29,12 @@ let sortData = (data, sortOrder) => {
     }
     return organized;
 };
-    
+         
 window.sortData= sortData;
+
+let stadistics = (element, data) =>{
+      let porcentage;
+      porcentage = Math.round((element/data.length)*100);
+      return porcentage;
+};
+window.stadistics = stadistics;
