@@ -35,16 +35,11 @@ Por último también les consultamos sobre cuales características les serían �
 ![Filtrar](images/Filtrar.png)
 ![Ordenar](images/Ordenar.png)
 
-Con la información obtenida construimos nuestra "protopersona".
----------------------------------------------------------------------------------------------------------
-### PROTOPERSONA
-![Tip](images/rafael.jpg)\ Rafael es un joven contador junior de 28 años, tiene una novia y actualmente trabaja en una empresa importante, donde es responsable de registrar las operaciones del libro mayor, de compilar los balances, recopilar datos para los informes mensuales, cálculos de doble control y actualización de entradas de diario. 
-Sus metas a corto plazo son viajar por todo el mundo, aprender un idioma nuevo.
-Sus metas a largo plazo ascender a contador senior y comprarse un coche.
-Es muy apasionado en su trabajo, responsable y ha mostrado sus habilidades de liderazgo en su equipo de trabajo. Su debilidad son las redes sociales.
-Le apasionan los videojuegos y viajar. Utiliza mucho la computadora y su teléfono celular. Normalmente accede al internet a través de su dispositivo móvil. Navega por la web todos los días ya sea porque su trabajo lo requiere o para buscar información sobre el nuevo juego que le ha llamado la atención, Pokémon Go, que ahora se ha convertido en su favorito. Después de ver la película de Pokémon que se estrenó hace algunos meses y puesto que en su infancia era fan de la caricatura, por fin se decidió a jugarlo. Por lo que en ocasiones consulta páginas web para informarse acerca de los Pokémon. En las actualizaciones recientes que se le han hecho al juego, sobresale la que dependiendo del estado del tiempo (si está lloviendo o hace calor) se encuentran ciertos tipos de pokémones, es decir, según el clima depende el tipo de Pokémon que encontremos en algún lugar.
-Mientras navega por la web le estresa encontrarse con páginas que no tienen información específica del tema que busca, las páginas acerca de Pokémon que ha consultado son dirigidas a conocedores del juego, por lo que Rafael como jugador aficionado, se frustra al no encontrar información explicita. 
----------------------------------------------------------------------------------------------------------
+Con la información obtenida construimos nuestro "user persona".
+-
+### USER PERSONA
+![UserPersona](images/Rafael.jpg)
+
 Teniendo en cuenta sus necesidades como usuario, hemos decidido crear una página web, donde se muestre la información necesaria pero sencilla para los jugadores novatos o simples aficionados, información que puedan entender y que puedan utilizar mientras juegan. 
 
 De acuerdo con una encuesta entre aficionados al juego, lo que ellos más desean ver en una página sólo son ciertas características de los pokémon, como el nombre, imagen de Pokémon y su tipo. Poderlos ver filtrados según su tipo(elemento) y la probabilidad de encontrarlos en algún lugar. Ordenados por nombre y número. Que la página les muestre información importante pero fácil de digerir. 
