@@ -38,3 +38,5 @@ let stadistics = (element, data) =>{
       return porcentage;
 };
 window.stadistics = stadistics;
+
+//Comentario, borrar
