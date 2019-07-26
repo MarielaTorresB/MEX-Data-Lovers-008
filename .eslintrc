@@ -7,7 +7,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false
+    "google": false
   },
   "rules": {
     "no-console": 0,

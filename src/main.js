@@ -29,15 +29,15 @@ const mostrarData = (data) => {
                            <img class="poke-img" src="${element.img}"/>
                        </div>
                        <div>
-                           <p>${element.name}</p>
-                       </div>
+                           <p class = "poke-Name">${element.name}</p>
+                       </div> 
                    </div>
                    <div class= "flip-card-back">
                         <div class= "datos">
-                            <p> Type: </p>
-                            <p>${element.type}</p>
-                            <p> Candy: </p>
-                            <p>${element.candy}</p>
+                            <p> Type: ${element.type}</p>      
+                            <br>              
+                            <p> Candy: ${element.candy}</p>
+                            <br>         
                             <p> Weaknesses: </p>
                             <p>${element.weaknesses}</p>
                         </div>
@@ -73,47 +73,15 @@ const typeP = ["Water", "Fire", "Grass", "Ground", "Ice", "Electric", "Rock", "F
 let numType = [];
 typeP.forEach(element =>{
     numType.push((window.filterData(dataPokemon,element).length));
-})
+});
 console.log(numType);
 
 let porcentageTypePokemon = [];
 
-numType.forEach(element => {
-    porcentageTypePokemon.push(Math.round((element/dataPokemon.length)*100) + '%')
-})
-console.log(porcentageTypePokemon)
+ numType.forEach(element => {
+     porcentageTypePokemon.push(window.stadistics(element, dataPokemon));
+ });
 
-//grafica
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(graphType);
-
-function graphType (){
-    let data = google.visualization.arrayToDataTable([
-        ['Tipo', '%'],
-        ['Agua', 21],
-        ['Fuego', 8],
-        ['Planta', 9],
-        ['Tierra', 9],
-        ['Hielo', 3],
-        ['Eléctrico', 6],
-        ['Roca', 7],
-        ['Volador', 13],
-        ['Venenoso', 22],
-        ['Insecto', 8],
-        ['Psíquico', 9],
-        ['Normal', 16],
-        ['Volador', 5],
-        ['Dragón', 2]        
-    ]);
-
-    const options ={
-        title: 'Tipos de Pokemones',
-        is3D: true,
-    };
-
-    let chart = new google.visualization.PieChart(document.getElementById('div-show-graph'));
-    chart.draw(data,options);
-}
 
 const show = () =>{
     pokemones.classList.remove("hidden");
@@ -131,7 +99,40 @@ const showGraph = () =>{
     sectionGraph.classList.remove("hidden");
     pokemones.classList.add("hidden");
     inicio.classList.add("hidden");
-}
+
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(graphType);
+    
+    function graphType (){
+        let data = google.visualization.arrayToDataTable([
+            ['Tipo', '%'],
+            ['Agua', 32],
+            ['Fuego', 12],
+            ['Planta', 14],
+            ['Tierra', 14],
+            ['Hielo', 5],
+            ['Eléctrico', 9],
+            ['Roca', 11],
+            ['Volador', 19],
+            ['Venenoso', 33],
+            ['Insecto', 12],
+            ['Psíquico', 14],
+            ['Normal', 24],
+            ['Volador', 8],
+            ['Dragón', 3]        
+        ]);
+    
+        const options ={
+            title: 'Tipos de Pokemones',
+            is3D: true,
+            'width':1000,
+            'height':1000,
+        };
+        
+        let chart = new google.visualization.PieChart(document.getElementById('div-show-graph'));
+        chart.draw(data,options);    
+    }
+};
 
 type.addEventListener("change", showType); //La lista desplegable responderá a un cambio y ejecuta la función "showtype"
 order.addEventListener("change",orderPokemon);
