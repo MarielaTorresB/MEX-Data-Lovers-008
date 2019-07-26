@@ -13,6 +13,8 @@ const pokeGraph = document.getElementById("graph");
 const pokemones = document.getElementById("section-pokemon");
 const sectionGraph = document.getElementById("show-graph");
 
+
+
 const mostrarData = (data) => {
     let str =  '';
     data.forEach(element => {
@@ -38,10 +40,6 @@ const mostrarData = (data) => {
                             <p>${element.candy}</p>
                             <p> Weaknesses: </p>
                             <p>${element.weaknesses}</p>
-                            <p> Prev. Evolution: </p>
-                            <p> ${element.prev_evolution}</p>
-                            <p> Next Evolution: </p>
-                            <p> ${element.next_evolution} </p>
                         </div>
                    </div>
                </div>
@@ -50,6 +48,7 @@ const mostrarData = (data) => {
 allPokemon.innerHTML = str;
 };
 mostrarData(dataPokemon);
+
 
 //Función "showType"
 const showType = event => {
@@ -140,15 +139,22 @@ pokedex.addEventListener("click",show);
 introduction.addEventListener("click", showHome);
 pokeGraph.addEventListener("click", showGraph);
  
-//  let prevolution=document.getElementById("prevolution"); //Borrar si no es posible mostrar evoluciones
- 
-//  If ([element].prev_evolution[0] == "undefined"){
-//      prevolution.innerHTML="NONE";
-// } else {
-//      prevolution.innerHTML= [element].prev_evolution[0].name:
-//   };
+//Borrar si no funciona
+
+// let prevolution=document.getElementById("prevolution"); //Borrar si no es posible mostrar evoluciones
+// let evolution=document.getElementById("evolution");
+
+// let prevEvolution = ()=>{
+//   if ([element].prev_evolution[0] == "undefined"){
+//       prevolution.innerHTML="No pre-evolution";
+//  } else {
+//       prevolution.innerHTML= [element].prev_evolution[0].name;
+//    };
+// };
+
 //  If([element].prev_evolution[0] == "undefined") {
 //     evolution.innerHTML="NONE";
 // } else {
 //     evolution.innerHTML= [element].prev_evolution[0].name:
 //  };
+ //Hasta aqui
