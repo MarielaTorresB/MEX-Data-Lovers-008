@@ -27,8 +27,8 @@ const mostrarData = (data) => {
                            <img class="poke-img" src="${element.img}"/>
                        </div>
                        <div>
-                           <p class = "poke-Name">${element.name}</p>
-                       </div> 
+                           <p>${element.name}</p>
+                       </div>
                    </div>
                    <div class= "flip-card-back">
                         <div class= "datos">
@@ -38,6 +38,10 @@ const mostrarData = (data) => {
                             <br>         
                             <p> Weaknesses: </p>
                             <p>${element.weaknesses}</p>
+                            <p> Prev. Evolution: </p>
+                            <p> ${element.prev_evolution}</p>
+                            <p> Next Evolution: </p>
+                            <p> ${element.next_evolution} </p>
                         </div>
                    </div>
                </div>
@@ -59,8 +63,8 @@ const orderPokemon = event => {
     if (pokearray.length == "0"){
         pokearray= dataPokemon;
     }
-    const ordenDatos = event.target.value; //Guardando el orden que elige el usuario
-    pokearrayOrganized = window.sortData(pokearray,ordenDatos); //Se guarda como nuevo arreglo, el resultado de la función filterData
+    const criterion = event.target.value; //Guardando el orden que elige el usuario
+    pokearrayOrganized = window.sortData(pokearray,criterion); //Se guarda como nuevo arreglo, el resultado de la función filterData
     mostrarData(pokearrayOrganized);
 };
 
@@ -136,3 +140,16 @@ order.addEventListener("change",orderPokemon);
 pokedex.addEventListener("click",show);
 introduction.addEventListener("click", showHome);
 pokeGraph.addEventListener("click", showGraph);
+ 
+//  let prevolution=document.getElementById("prevolution"); //Borrar si no es posible mostrar evoluciones
+ 
+//  If ([element].prev_evolution[0] == "undefined"){
+//      prevolution.innerHTML="NONE";
+// } else {
+//      prevolution.innerHTML= [element].prev_evolution[0].name:
+//   };
+//  If([element].prev_evolution[0] == "undefined") {
+//     evolution.innerHTML="NONE";
+// } else {
+//     evolution.innerHTML= [element].prev_evolution[0].name:
+//  };
